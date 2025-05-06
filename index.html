@@ -91,6 +91,38 @@
       width: 150px;
       border-radius: 8px;
     }
+
+    .qr-thumbnail {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .qr-thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .qr-popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-popup-inner img {
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    
   </style>
 </head>
 <body>
@@ -115,9 +147,31 @@
       <a href="pankaj.vcf" download class="button">Add to Contacts</a>
     </div>
 
-    <div class="qr">
-      <img src="qrcode.png" alt="Scan to Save Contact">
+    <div class="qr" onclick="toggleQRPopup()">
+      <img src="qrcode.png" alt="Scan to Save Contact" class="qr-thumbnail">
     </div>
+
+    <!-- QR Code Popup -->
+  <div id="qr-popup" class="qr-popup">
+    <div class="qr-popup-inner">
+      <img src="qrcode.png" alt="Scan to Save Contact" />
+    </div>
+  </div>
+
+  <script>
+    function toggleQRPopup() {
+      const popup = document.getElementById('qr-popup');
+      popup.style.display = (popup.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    // Close popup when clicking outside image
+    window.addEventListener('click', function (e) {
+      const popup = document.getElementById('qr-popup');
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
   </div>
 </body>
 </html>
