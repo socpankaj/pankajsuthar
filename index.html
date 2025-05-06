@@ -4,70 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pankaj Suthar - Cyber Security Researcher</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #111;
+      background-color: #121212;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      color: #fff;
     }
 
     .card {
       background: #1e1e1e;
       padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
       text-align: center;
-      max-width: 420px;
       width: 90%;
+      max-width: 420px;
     }
 
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       margin-bottom: 15px;
       object-fit: cover;
-      border: 3px solid #0077cc;
+      border: 3px solid #0077ff;
     }
 
     h1 {
-      font-size: 1.8em;
+      font-size: 1.9em;
       margin: 10px 0 5px;
-      color: #00b4ff;
+      color: #00aaff;
     }
 
-    p {
-      margin: 6px 0;
+    .info {
+      text-align: left;
+      margin-top: 20px;
       font-size: 0.95em;
+      line-height: 1.5em;
+    }
+
+    .info p {
+      margin: 10px 0;
       color: #ddd;
     }
 
-    a {
-      color: #00b4ff;
+    .info a {
+      color: #4dabf7;
       text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .buttons {
+      margin-top: 20px;
     }
 
     .button {
       display: inline-block;
-      margin: 10px 5px;
+      margin: 8px 6px;
       text-decoration: none;
       color: white;
-      background: #0077cc;
+      background: #0077ff;
       padding: 10px 16px;
       border-radius: 8px;
       transition: background 0.3s ease;
-      font-weight: 600;
+      font-weight: bold;
     }
 
     .button:hover {
-      background: #005fa3;
+      background: #005fd1;
     }
 
     .qr {
@@ -84,20 +97,25 @@
   <div class="card">
     <img src="pankaj-suthar.jpg" alt="Pankaj Suthar" class="avatar">
     <h1>Pankaj Suthar</h1>
-    <p><strong>Title:</strong> Lead - DLR Team / Security Researcher</p>
-    <p><strong>Company:</strong> iZOOlogic</p>
-    <p><strong>About Me:</strong><br> Passionate cybersecurity researcher with experience in threat intel.</p>
-    <p><strong>Email:</strong> <a href="mailto:pankaj.suthar@izoologic.com">pankaj.suthar@izoologic.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+918058669510">+91-8058669510</a></p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/918058669510" target="_blank">Chat on WhatsApp</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/pankajcybersec" target="_blank">pankajcybersec</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/socpankaj" target="_blank">socpankaj</a></p>
-    <div>
+
+    <div class="info">
+      <p><strong>Title:</strong><br> Lead - DLR Team / Security Researcher</p>
+      <p><strong>Company:</strong><br> iZOOlogic</p>
+      <p><strong>About Me:</strong><br> Passionate cybersecurity researcher with experience in threat intel.</p>
+      <p><strong>Email:</strong><br> <a href="mailto:pankaj.suthar@izoologic.com">pankaj.suthar@izoologic.com</a></p>
+      <p><strong>Phone:</strong><br> <a href="tel:+918058669510">+91-8058669510</a></p>
+      <p><strong>WhatsApp:</strong><br> <a href="https://wa.me/918058669510" target="_blank">Chat on WhatsApp</a></p>
+      <p><strong>LinkedIn:</strong><br> <a href="https://linkedin.com/in/pankajcybersec" target="_blank">pankajcybersec</a></p>
+      <p><strong>GitHub:</strong><br> <a href="https://github.com/socpankaj" target="_blank">socpankaj</a></p>
+    </div>
+
+    <div class="buttons">
       <a href="pankaj.vcf" download class="button">Add to Contacts</a>
       <a href="pankajsuthar.pkpass" class="button">Add to Apple Wallet</a>
     </div>
+
     <div class="qr">
-      <img src="qrcode.png" alt="Scan to Save Contact" />
+      <img src="qrcode.png" alt="Scan to Save Contact">
     </div>
   </div>
 </body>
