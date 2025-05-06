@@ -87,6 +87,13 @@
       margin-top: 20px;
     }
 
+    .qr-wrapper {
+      margin-top: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+    }
+
     .qr img {
       width: 150px;
       border-radius: 8px;
@@ -147,7 +154,7 @@
       <a href="pankaj.vcf" download class="button">Add to Contacts</a>
     </div>
 
-    <div class="qr" onclick="toggleQRPopup()">
+    <div class="qr-wrapper" onclick="toggleQRPopup()">
       <img src="qrcode.png" alt="Scan to Save Contact" class="qr-thumbnail">
     </div>
 
