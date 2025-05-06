@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Your Name
+TITLE:Cybersecurity Researcher
+ORG:iZOOlogic
+TEL;TYPE=CELL:+91-9876543210
+EMAIL:your.email@example.com
+URL:https://yourusername.github.io/
+END:VCARD

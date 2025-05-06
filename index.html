@@ -44,7 +44,7 @@
       color: #555;
     }
 
-    a {
+    a.button {
       display: inline-block;
       margin: 8px 5px;
       text-decoration: none;
@@ -55,9 +55,14 @@
       transition: background 0.3s ease;
     }
 
-    a:hover {
+    a.button:hover {
       background: #005fa3;
     }
+
+    .qr {
+      margin-top: 15px;
+    }
+
   </style>
 </head>
 <body>
@@ -66,11 +71,18 @@
     <h1>Your Name</h1>
     <p><strong>Title:</strong> Cybersecurity Researcher</p>
     <p><strong>Company:</strong> iZOOlogic</p>
+    <p><strong>About Me:</strong> Passionate cybersecurity researcher with experience in threat intel.</p>
     <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919876543210" target="_blank">Chat on WhatsApp</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">Your GitHub</a></p>
     <div>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://yourwebsite.com" target="_blank">Website</a>
+      <a href="yourname.vcf" download class="button">Add to Contacts</a>
+      <a href="yourpass.pkpass" class="button">Add to Apple Wallet</a>
+    </div>
+    <div class="qr">
+      <img src="qrcode.png" alt="Scan to Save Contact" style="width:150px;" />
     </div>
   </div>
 </body>
