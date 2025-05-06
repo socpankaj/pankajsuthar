@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Suthar - Digital Business Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 400px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .card h2 {
+      color: #00aaff;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .card p span {
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .card a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #00aaff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .qr-wrapper {
+      margin-top: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+    }
+
+    .qr-thumbnail {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .qr-thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .qr-popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-popup-inner img {
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Pankaj Suthar</h2>
+
+    <p><span>Title:</span> Lead— DLR Team / Security Researcher</p>
+    <p><span>Company:</span> iZOOlogic</p>
+    <p><span>About Me:</span><br>
+      Security researcher with a mission to uncover threats, decode cybercriminal tactics, and help organizations stay resilient. Focused on turning intelligence into action.
+    </p>
+    <p><span>Email:</span> <a href="mailto:pankaj.suthar@izoologic.com">pankaj.suthar@izoologic.com</a></p>
+    <p><span>Phone:</span> <a href="tel:+918058669510">+91-8058669510</a></p>
+    <p><span>WhatsApp:</span> <a href="https://wa.me/918058669510" target="_blank">Chat on WhatsApp</a></p>
+    <p><span>LinkedIn:</span> <a href="https://linkedin.com/in/pankajcybersec" target="_blank">pankajcybersec</a></p>
+    <p><span>GitHub:</span> <a href="https://github.com/socpankaj" target="_blank">socpankaj</a></p>
+
+    <!-- QR code -->
+    <div class="buttons">
+      <a href="pankaj.vcf" download class="button">Add to Contacts</a>
+    </div>
+  </div>
+
+  <!-- QR Code Popup -->
+  <div id="qr-popup" class="qr-popup">
+    <div class="qr-popup-inner">
+      <img src="qrcode.png" alt="Scan to Save Contact" />
+    </div>
+  </div>
+
+  <script>
+    function toggleQRPopup() {
+      const popup = document.getElementById('qr-popup');
+      popup.style.display = (popup.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    // Close popup when clicking outside image
+    window.addEventListener('click', function (e) {
+      const popup = document.getElementById('qr-popup');
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
