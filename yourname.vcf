@@ -1,9 +1,11 @@
 BEGIN:VCARD
 VERSION:3.0
+N:Suthar;Pankaj;;;
 FN:Pankaj Suthar
-TITLE:Lead - DLR Team / Security Researcher
 ORG:iZOOlogic
-EMAIL:pankaj.suthar@izoologic.com
-TEL;TYPE=cell:+91-8058669510
-URL:https://github.com/socpankaj
+TITLE:Lead - DLR Team / Security Researcher
+EMAIL;TYPE=INTERNET:pankaj.suthar@izoologic.com
+TEL;TYPE=CELL:+91-8058669510
+URL;TYPE=LinkedIn:https://linkedin.com/in/pankajcybersec
+URL;TYPE=GitHub:https://github.com/socpankaj
 END:VCARD
