@@ -107,6 +107,16 @@
       border-radius: 12px;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
     }
+
+    .qr {
+      margin-top: 20px;
+    }
+
+    .qr img {
+      width: 150px;
+      border-radius: 8px;
+    }
+      
   </style>
 </head>
 <body>
@@ -126,9 +136,14 @@
     <p><span>LinkedIn:</span> <a href="https://linkedin.com/in/pankajcybersec" target="_blank">pankajcybersec</a></p>
     <p><span>GitHub:</span> <a href="https://github.com/socpankaj" target="_blank">socpankaj</a></p>
 
-    <!-- QR code -->
     <div class="buttons">
       <a href="pankaj.vcf" download class="button">Add to Contacts</a>
+    </div>
+  </div>
+
+  <!-- QR code -->
+    <div class="qr-wrapper" onclick="toggleQRPopup()">
+      <img src="qrcode.png" alt="QR Code" class="qr-thumbnail" />
     </div>
   </div>
 
